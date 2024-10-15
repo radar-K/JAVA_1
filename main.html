@@ -1,0 +1,142 @@
+<script>
+    // Uppgift 1, Skriv ut Apelsin 
+    var fruit = "Apple"
+    fruit = "Orange"
+    console.log("The fruit is " + fruit);
+
+
+    // Task 1: Inside of a console.log(), add 3.5 to your age:
+    let age = 10;
+    console.log("Im " + (age + 3.5) + " years old");
+    
+     // Task 2: Inside of a console.log(), take the current year and subtract 1969:
+    console.log(2024 - 1969);
+
+       
+    // Task 3: Inside of a  console.log(), divide 65 by 240:
+    console.log(65/240);
+  
+  
+    // Task 4: Inside of a  console.log(), multiply 0.2708 by 100:
+    console.log( 0.2708 * 100);
+    
+    // Task 5: Use console.log to print your name in uppercase
+    console.log("Karolina Rad".toUpperCase());
+  
+    // Task 5: Find a function from the JavaScript string documentation (link below)
+    //         to remove the whitespace around the string in the console.log() below.
+    console.log("     Hej Space      ".trim());
+   
+      
+    // Task 6: Find a function in the documentation to count the number of characters in a
+    //         string and update the console.log() below to print the number instead of the string:
+    console.log("How many characters long is this string?".length);
+
+    // Task 7: Below is a variable which stores the speed a car is travelling. Write an if statement
+    // below the varaible which prints "Slow down!" if the car is travelling above 100, or
+    // prints "Carry on" if it's travelling below 100.
+    //
+    const carSpeed = 85
+
+    if (carSpeed > 100) {
+      console.log("Slow Down!");
+    } else {
+      console.log("Carry on");
+    }
+  
+    // Task 8: Below is a variable which stores the word count of a blog post I'm writing.
+    //         Write an if-statement which logs (console.log) "Get writing!" if the number is 0.
+    const wordCount = 0
+
+    if (wordCount === 0){
+      console.log("Get writing");
+    }
+
+      
+    // Task 9: Use the "and" logical operator (&&) to chain two assertions together. Below are two
+    //         variables; one which stores the current temperature, and one which stores whether
+    //         someone has gone for a run today. Write an if-statement which prints "Go for a run!"
+    //         if the current temperature is greater than 10, and the goneForARun is false.
+    const currentTemperature = 15
+    const goneForARun = false
+
+    if (currentTemperature >= 10 && goneForARun == false){
+      console.log("Go for a run!");
+    }
+  
+    // Task 10: Using .length() to get the length of a string and the `name` variable below,
+    //         write an "else if" statement which prints the following:
+    //         * "You have a long name!" if the length of the name is greater than 10 characters long
+    //         * "You have a short name!" if the length of the name is less than 5 characters long
+    //         * "You have a medium length name!" if neither of the other two assertions is true
+  
+    const name = "Mary"
+
+    if (name.lenght >= 10){
+      console.log("You have a long name!");
+    } else if (name.lenght < 5){
+      console.log("You have a short name!");
+    } else {
+      console.log("You have a medium length name!");
+    }
+
+    // Functions are a way to store a re-usable snippet of code in a block which can
+    // be run later. For example, this function would print the current time when invoked:
+    const printCurrentTime = () => {
+      const currentTime = new Date()
+      return currentTime.toLocaleTimeString()
+    }
+  
+    // Task 11: Invoke the printCurrentTime function inside a console.log():
+    console.log(printCurrentTime());
+  
+    // Task 12: Write a function which, when invoked, prints your name. Then invoke it twice.
+    function printName () {
+      console.log("Mitt namn är Öl");
+    }
+
+    printName ();
+    printName ();
+  
+  
+    // Task 13: Write a function called `printGreeting`. When invoked using the examples
+    // below, it should print "Hello Bob" or "Hello Sue":
+    function printGreeting (name) {
+      if (name === "bob") {
+      console.log("Hello bob");
+    } else {
+      console.log("Hello Sue");
+    }
+  };
+
+     printGreeting("Bob") 
+     printGreeting("Sue") 
+  
+  
+    // Task 14: Write a function called `multiply` which multiplies two numbers together and returns the value
+    // so that it can be stored in a variable. See the example below to see how it should work.
+    function multiply (a,b) {
+      return a*b;
+    }
+    const result = multiply (4,5);
+    console.log(result);
+  
+    // Task 15: Write a function called `warmEnough` which takes the current temperature as an argument and returns
+    // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
+    // function. It should print "Go for a run!"
+  
+    function warmEnough(currentTemp) {
+      if (warmEnough > 10) {
+        console.log("true");
+      } else {
+        console.log("false");
+      }
+    }
+
+    var currentTemp = warmEnough (12); 
+
+  </script>
+  
+
+
+
